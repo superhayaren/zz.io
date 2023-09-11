@@ -10,32 +10,39 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(270deg, #FFEBB7 0%, #FFC578 50%, #FFA26B 100%);
+        background: linear-gradient(45deg, #ffb3a7, #ffc3a0, #ffd3ab);
         background-size: 200% 200%;
-        animation: gradient 30s ease infinite;
+        animation: gradient 20s ease infinite;
     }
     .button {
         padding: 15px 30px;
         font-size: 16px;
         border: none;
         border-radius: 5px;
-        background-color: #FF7F50;
+        background-color: #ff6f61;
         color: white;
         cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .button:hover {
+        background-color: #ff8a80;
     }
     @keyframes gradient {
         0% {
-            background-position: 200% 0;
+            background-position: 100% 0%;
+        }
+        50% {
+            background-position: 0% 100%;
         }
         100% {
-            background-position: -200% 0;
+            background-position: 100% 0%;
         }
     }
 </style>
 </head>
 <body>
 
-<button class="button" onclick="openLink()">点击打开链接</button>
+<button class="button" onclick="openLink()">点击打开白嫖君得店铺</button>
 
 <script>
     function openLink() {
