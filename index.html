@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(270deg, #FFEBB7 0%, #FFC578 50%, #FFA26B 100%);
+        background-size: 200% 200%;
+        animation: gradient 30s ease infinite;
+    }
+    .button {
+        padding: 15px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #FF7F50;
+        color: white;
+        cursor: pointer;
+    }
+    @keyframes gradient {
+        0% {
+            background-position: 200% 0;
+        }
+        100% {
+            background-position: -200% 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<button class="button" onclick="openLink()">点击打开链接</button>
+
+<script>
+    function openLink() {
+        const url = 'https://ccshop.bjp666.link/';
+        window.open(url, '_blank');
+    }
+</script>
+
+</body>
+</html>
